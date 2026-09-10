@@ -23,6 +23,15 @@
       "dependencies": {},
       "hash": "acc1c7bc9ea34c33b830e40316fca52553878d29"
     },
+    "com.sabanishi.screensystem": {
+      "version": "https://github.com/sabanishi/ScreenSystem.git?path=/Packages/com.sabanishi.screensystem",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {
+        "com.cysharp.unitask": "2.5.0"
+      },
+      "hash": "aa33579ef95b4e26008c06f5885dc4720d8cab57"
+    },
     "com.unity.2d.animation": {
       "version": "13.0.6",
       "depth": 0,
