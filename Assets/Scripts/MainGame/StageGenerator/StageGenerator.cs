@@ -12,7 +12,6 @@ namespace Sabanishi.MebuMekaFarm.MainGame
         
         public GameObject[,] Generate(ChipType[,] typeMatrix)
         {
-            float chipSize = Constants.ChipSize;
             int width = typeMatrix.GetLength(0);
             int height = typeMatrix.GetLength(1);
             GameObject[,] result = new GameObject[width, height];
@@ -23,7 +22,7 @@ namespace Sabanishi.MebuMekaFarm.MainGame
                     ChipType type = typeMatrix[x, y];
                     if(type == ChipType.None)continue;
                     GameObject instance = Instantiate(prefabDict[type], chipsParent, true);
-                    instance.name = type.ToString();
+                    instance.name = $"({x},{y}){type}";
                     instance.transform.localPosition = new Vector3(x, y, 0);
                     result[x, y] = instance;
                 }
