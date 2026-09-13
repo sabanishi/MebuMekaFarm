@@ -1,10 +1,11 @@
-using System;
+using System.Linq;
 using Cysharp.Threading.Tasks;
 using Sabanishi.MebuMekaFarm.Common;
 using Sabanishi.MebuMekaFarm.Sound;
 using Sabanishi.ScreenSystem;
 using TypeReferences;
 using UnityEngine;
+using Screen = Sabanishi.ScreenSystem.Screen;
 
 namespace Sabanishi.MebuMekaFarm
 {
@@ -31,13 +32,14 @@ namespace Sabanishi.MebuMekaFarm
 
             _transitioner = new ScreenTransitioner(null, null);
 
-            IScreen toScreen = ScreenGenerator.Generate(startScreenType.Type);
+            IScreen toScreen = SearchScreenFromHierarchy() ?? ScreenGenerator.Generate(startScreenType.Type);
             _transitioner.Jump<IScreen>(toScreen).Forget();
         }
 
-        private void OnDestroy()
+        private Screen SearchScreenFromHierarchy()
         {
-            SoundLocator.Instance.SoundPlayer.Cleanup<GeneralType>();
+            // ヒエラルキー内のオブジェクトを走査してScreen継承クラスを返す
+            return FindObjectsByType<Screen>(FindObjectsSortMode.None).FirstOrDefault();
         }
     }
 }

@@ -10,14 +10,14 @@ using Object = UnityEngine.Object;
 
 namespace Sabanishi.MebuMekaFarm.Common
 {
-    public class ScreenGenerator
+    public static class ScreenGenerator
     {
         private static readonly Dictionary<Type, string> ScreenPrefabPathMap = new Dictionary<Type, string>()
         {
-            { typeof(TitleScreen), "Screens/TitleScreen" },
-            { typeof(StageSelectScreen), "Screens/StageSelectScreen" },
-            { typeof(MainGameScreen), "Screens/MainGameScreen" },
-            { typeof(UgcScreen), "Screens/UgcScreen" },
+            { typeof(TitleScreen), "Screen/TitleScreen" },
+            { typeof(StageSelectScreen), "Screen/StageSelectScreen" },
+            { typeof(MainGameScreen), "Screen/MainGameScreen" },
+            { typeof(UgcScreen), "Screen/UgcScreen" },
         };
 
         /// <summary>
