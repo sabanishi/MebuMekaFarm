@@ -119,6 +119,71 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &206428133
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 206428134}
+  - component: {fileID: 206428135}
+  m_Layer: 0
+  m_Name: StageGenerator
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &206428134
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 206428133}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1899545310}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &206428135
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 206428133}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 714e4ef38836402ba102cf13acc32507, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Sabanishi.MebuMekaFarm.MainGame.StageGenerator
+  prefabDict:
+    data:
+    - Key: 1
+      Value: {fileID: 7051129130262375457, guid: 0bd17083c51894831914791914697612, type: 3}
+    - Key: 2
+      Value: {fileID: 7051129130262375457, guid: 0bd17083c51894831914791914697612, type: 3}
+    - Key: 3
+      Value: {fileID: 7051129130262375457, guid: 0bd17083c51894831914791914697612, type: 3}
+    - Key: 4
+      Value: {fileID: 6560488305542380237, guid: e64325659e06f4406ad18f584c0baf0b, type: 3}
+    - Key: 5
+      Value: {fileID: 848737094612677691, guid: ded4b18efb162459d92bad0abb606028, type: 3}
+    - Key: 6
+      Value: {fileID: 5523882143439867045, guid: af524f3a170d54922890715f7c4ed8d2, type: 3}
+    - Key: 7
+      Value: {fileID: 4615367494943335820, guid: 6fa63171e91ce497d92ce0ae335a4e9d, type: 3}
+    - Key: 8
+      Value: {fileID: 2426596682687481686, guid: 15c702136fbcf4ed0a9d9dc0c01bbfb9, type: 3}
+    - Key: 9
+      Value: {fileID: 2396370303484576192, guid: 3372bcbd5873a46e791f3103f496e1ea, type: 3}
+  chipsParent: {fileID: 206428134}
 --- !u!1001 &225073034
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -387,6 +452,136 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1899545309
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2307459737860576346, guid: d2468da66666e49b593ccf20810259d6, type: 3}
+      propertyPath: gameManager
+      value: 
+      objectReference: {fileID: 1899545312}
+    - target: {fileID: 2307459737860576346, guid: d2468da66666e49b593ccf20810259d6, type: 3}
+      propertyPath: tilemapParser
+      value: 
+      objectReference: {fileID: 1899545313}
+    - target: {fileID: 4533316706605844577, guid: d2468da66666e49b593ccf20810259d6, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -478
+      objectReference: {fileID: 0}
+    - target: {fileID: 4533316706605844577, guid: d2468da66666e49b593ccf20810259d6, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 296
+      objectReference: {fileID: 0}
+    - target: {fileID: 5522634857959430702, guid: d2468da66666e49b593ccf20810259d6, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 15.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5522634857959430702, guid: d2468da66666e49b593ccf20810259d6, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 8.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5869561265498405840, guid: d2468da66666e49b593ccf20810259d6, type: 3}
+      propertyPath: orthographic size
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 6278791620949455212, guid: d2468da66666e49b593ccf20810259d6, type: 3}
+      propertyPath: m_Name
+      value: MainGameScreen
+      objectReference: {fileID: 0}
+    - target: {fileID: 7542982701169009309, guid: d2468da66666e49b593ccf20810259d6, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 610.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7542982701169009309, guid: d2468da66666e49b593ccf20810259d6, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 343.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7542982701169009309, guid: d2468da66666e49b593ccf20810259d6, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7542982701169009309, guid: d2468da66666e49b593ccf20810259d6, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7542982701169009309, guid: d2468da66666e49b593ccf20810259d6, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7542982701169009309, guid: d2468da66666e49b593ccf20810259d6, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7542982701169009309, guid: d2468da66666e49b593ccf20810259d6, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7542982701169009309, guid: d2468da66666e49b593ccf20810259d6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7542982701169009309, guid: d2468da66666e49b593ccf20810259d6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7542982701169009309, guid: d2468da66666e49b593ccf20810259d6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 7542982701169009309, guid: d2468da66666e49b593ccf20810259d6, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 206428134}
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6278791620949455212, guid: d2468da66666e49b593ccf20810259d6, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1899545313}
+    - targetCorrespondingSourceObject: {fileID: 6278791620949455212, guid: d2468da66666e49b593ccf20810259d6, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1899545312}
+  m_SourcePrefab: {fileID: 100100000, guid: d2468da66666e49b593ccf20810259d6, type: 3}
+--- !u!4 &1899545310 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7542982701169009309, guid: d2468da66666e49b593ccf20810259d6, type: 3}
+  m_PrefabInstance: {fileID: 1899545309}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1899545311 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6278791620949455212, guid: d2468da66666e49b593ccf20810259d6, type: 3}
+  m_PrefabInstance: {fileID: 1899545309}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1899545312
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1899545311}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 318b9ec8759d46bea9d9ab45a68b1006, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Sabanishi.MebuMekaFarm.MainGame.GameManager
+  stageGenerator: {fileID: 206428135}
+--- !u!114 &1899545313
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1899545311}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0dd85a1efb9749a29040e19eb8a293dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Sabanishi.MebuMekaFarm.MainGame.TilemapParser
+  tmpTilemap: {fileID: 6400378947621598483, guid: 1751e00491000419886756f5a6e2a985, type: 3}
 --- !u!1 &1975869345
 GameObject:
   m_ObjectHideFlags: 0
@@ -446,3 +641,4 @@ SceneRoots:
   - {fileID: 225073034}
   - {fileID: 1001157685}
   - {fileID: 537230058}
+  - {fileID: 1899545309}
