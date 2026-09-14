@@ -27,7 +27,7 @@ namespace Sabanishi.MebuMekaFarm.Stage
                     return ChipType.Mebuki;
                 case "Mebuka":
                     return ChipType.Mebuka;
-                case "Goal":
+                case "GoalEntity":
                     return ChipType.Goal;
                 case "Ground":
                     return ChipType.Ground;

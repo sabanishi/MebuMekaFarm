@@ -20,7 +20,7 @@ namespace Sabanishi.MebuMekaFarm.MainGame
 
         private float CalcOrthographicSize(float width, float height, float aspectRatio)
         {
-            return Mathf.Max(height / 2f, width / (2f * aspectRatio));
+            return Mathf.Min(height / 2f, width / (2f * aspectRatio));
         }
     }
 }

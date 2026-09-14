@@ -45,10 +45,8 @@ namespace Sabanishi.MebuMekaFarm.MainGame.Player
             }
             if (groundCheck.IsGround())
             {
-                Debug.Log("can jump");
                 if (Input.GetButtonDown("Jump"))
                 {
-                    Debug.Log("Jump");
                     speedVector = new Vector3(speedVector.x, JumpSpeed, 0);
                 }
             }
