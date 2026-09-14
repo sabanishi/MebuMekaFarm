@@ -3,7 +3,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-namespace Sabanishi.MebuMekaFarm.Common
+namespace Sabanishi.MebuMekaFarm
 {
     public class ButtonComponent : UIBehaviour
     {

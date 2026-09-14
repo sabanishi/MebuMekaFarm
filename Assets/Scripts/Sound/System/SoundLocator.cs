@@ -1,4 +1,3 @@
-using Sabanishi.MebuMekaFarm.Common;
 using UnityEngine;
 
 namespace Sabanishi.MebuMekaFarm.Sound

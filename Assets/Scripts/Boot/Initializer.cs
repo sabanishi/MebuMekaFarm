@@ -1,6 +1,5 @@
 using System.Linq;
 using Cysharp.Threading.Tasks;
-using Sabanishi.MebuMekaFarm.Common;
 using Sabanishi.MebuMekaFarm.Sound;
 using Sabanishi.ScreenSystem;
 using TypeReferences;

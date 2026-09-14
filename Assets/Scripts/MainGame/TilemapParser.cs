@@ -1,4 +1,3 @@
-using Sabanishi.MebuMekaFarm.Common;
 using Sabanishi.MebuMekaFarm.Stage;
 using UnityEngine;
 using UnityEngine.Tilemaps;

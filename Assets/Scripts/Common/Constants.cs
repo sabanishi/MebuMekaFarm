@@ -1,4 +1,4 @@
-namespace Sabanishi.MebuMekaFarm.Common
+namespace Sabanishi.MebuMekaFarm
 {
     public static class Constants
     {
