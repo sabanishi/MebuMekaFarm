@@ -2,7 +2,7 @@ using R3;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace Sabanishi.MebuMekaFarm.Common
+namespace Sabanishi.MebuMekaFarm
 {
     public static class ButtonR3Extensions
     {

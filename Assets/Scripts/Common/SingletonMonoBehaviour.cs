@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Sabanishi.MebuMekaFarm.Common
+namespace Sabanishi.MebuMekaFarm
 {
     public class SingletonMonoBehaviour<T> : MonoBehaviour where T : MonoBehaviour
     {

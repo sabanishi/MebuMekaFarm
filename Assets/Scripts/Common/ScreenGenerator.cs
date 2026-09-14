@@ -8,7 +8,7 @@ using Sabanishi.ScreenSystem;
 using UnityEngine;
 using Object = UnityEngine.Object;
 
-namespace Sabanishi.MebuMekaFarm.Common
+namespace Sabanishi.MebuMekaFarm
 {
     public static class ScreenGenerator
     {

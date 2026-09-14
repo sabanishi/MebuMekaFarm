@@ -1,7 +1,6 @@
 using System.Threading;
 using Cysharp.Threading.Tasks;
 using R3;
-using Sabanishi.MebuMekaFarm.Common;
 using Sabanishi.MebuMekaFarm.MainGame;
 using Sabanishi.MebuMekaFarm.Ugc;
 using UnityEngine;
